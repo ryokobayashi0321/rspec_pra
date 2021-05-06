@@ -14,6 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
   config.define_dervied_metadata do |meta|
     meta[:aggregate_failuers] = true unless meta.key?(:aggregate_failuers)
   end
