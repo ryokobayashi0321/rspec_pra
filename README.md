@@ -1,24 +1,16 @@
-# README
+# Rspecの練習（Rails) 1回目
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境構築
 
-Things you may want to cover:
+- `init`
+- .gitignore に `.DS_Store と /vendor/bundle `を追加
+- `rspec`を設定
+- `factory_bot_rails`を設定
+- `Faker`を設定
+- `日本語`に設定
+- `Userモデル`を作成
+- `factory_bot_rails`に`Faker`を設定
+- `trait`を設定
+- `Messageモデル`を作成
+- `１対多のアソシエーション`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
