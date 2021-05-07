@@ -14,9 +14,8 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  config.include FactoryBot::Syntax::Methods
-  config.define_dervied_metadata do |meta|
-    meta[:aggregate_failuers] = true unless meta.key?(:aggregate_failuers)
+  config.define_derived_metadata do |meta|
+    meta[:aggregate_failuers] = true unless meta.key?(:aggregate_failures)
   end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
