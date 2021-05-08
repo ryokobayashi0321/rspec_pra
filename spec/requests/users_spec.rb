@@ -44,6 +44,7 @@ RSpec.describe "Users", type: :request do
       end
     end
 
+
     context ":idに対応するユーザーが存在しないとき"
       let(:user_id){1}
 
@@ -51,4 +52,12 @@ RSpec.describe "Users", type: :request do
         expect{subject}.to raise_error ActiveRecord::RecordNotFound
       end
     end
+
+  describe "GET #new" do
+    subject {get(new_user_path)}
+    it "リクエストが成功する" do
+      subject
+      expect(response).to have_http_status(:ok)
+    end
   end
+end
